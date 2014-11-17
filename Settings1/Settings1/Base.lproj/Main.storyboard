@@ -130,7 +130,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green_Arrow_Up(new)1.png" highlightedImage="Green_Arrow_Up(new)1.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-5w-MUW">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_w_blue_r.png" highlightedImage="arrow_w_blue_r.png" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-5w-MUW">
                                                     <rect key="frame" x="292" y="22" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="A1G-cb-OjG"/>
@@ -168,9 +168,8 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green_Arrow_Up(new)1.png" highlightedImage="Green_Arrow_Up(new)1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gGf-v2-cYo">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_w_blue_r.png" highlightedImage="arrow_w_blue_r.png" translatesAutoresizingMaskIntoConstraints="NO" id="gGf-v2-cYo">
                                                     <rect key="frame" x="292" y="37" width="20" height="20"/>
-                                                    <color key="backgroundColor" red="0.9602216781810804" green="1" blue="0.32868184075869111" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="Gvx-aD-sH9"/>
                                                         <constraint firstAttribute="width" constant="20" id="xZR-sj-ud3"/>
@@ -397,6 +396,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Green_Arrow_Up(new)1.png" width="600" height="600"/>
+        <image name="arrow_w_blue_r.png" width="12" height="20"/>
     </resources>
 </document>
