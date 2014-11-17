@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CheckBox.h"
 
 @interface TableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel *labelType1_Title;
@@ -15,6 +16,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *labelType3_Title;
 @property (nonatomic, weak) IBOutlet UILabel *labelType4_Title;
 @property (nonatomic, weak) IBOutlet UILabel *labelType4_Content;
-@property (nonatomic, weak) IBOutlet UIButton *buttonType3;
+@property (nonatomic, strong) IBOutlet CheckBox *buttonType3;
 @property (nonatomic, weak) IBOutlet UIButton *buttonType4;
+@property (nonatomic, weak) IBOutlet UIView *checkBox;
 @end

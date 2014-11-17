@@ -33,7 +33,11 @@
 
 #pragma mark - Table view data source
 
-
+#pragma mark - UITableViewDataSource + UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
@@ -52,17 +56,23 @@
             case 1:
                 {
                   TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellType2" forIndexPath:indexPath];
+                    cell.labelType2_Title.text = [NSString stringWithFormat:@"%@ %@ %@ %@ ", cell.labelType2_Title.text, cell.labelType2_Title.text, cell.labelType2_Title.text, cell.labelType2_Title.text];
+                    cell.labelType2_Content.text = [NSString stringWithFormat:@"%@ %@ %@ %@ ", cell.labelType2_Content.text, cell.labelType2_Content.text, cell.labelType2_Content.text, cell.labelType2_Content.text];
                     return cell;
                 }
             case 2:
                 {
                    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellType3" forIndexPath:indexPath];
+                    UIView *checkbox = [[[NSBundle mainBundle] loadNibNamed:@"CheckBoxBT" owner:self options:nil] objectAtIndex:0];
+                   // cell.checkBox = checkbox;
+                    [cell.checkBox addSubview:checkbox];
                     return cell;
                 }
             case 3:
             {
                 TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellType4" forIndexPath:indexPath];
-                cell.labelType4_Title.text  = [NSString stringWithFormat:@"%@ /n%@", cell.labelType4_Content.text, cell.labelType4_Content.text];
+                cell.labelType4_Title.text  = [NSString stringWithFormat:@"%@ %@ %@", cell.labelType4_Content.text, cell.labelType4_Content.text, cell.labelType4_Content.text];
+                cell.labelType4_Content.text  = [NSString stringWithFormat:@"%@ %@ %@", cell.labelType4_Content.text, cell.labelType4_Content.text, cell.labelType4_Content.text];
                 return cell;
             }
             default:
@@ -73,25 +83,9 @@
                 break;
         }
     
-    // return cell;
 }
 
- - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    switch (indexPath.row)
-    {
-        case 0: case 2:
-        {
-            return  64;
-        }
-      
-        default:
-        {
-            return 95;
-        }
-            break;
-    }
-}
+
 /*
  - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];

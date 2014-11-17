@@ -17,6 +17,7 @@
 @synthesize labelType4_Content = _labelType4_Content;
 @synthesize buttonType3 = _buttonType3;
 @synthesize buttonType4 = _buttonType4;
+@synthesize checkBox = _checkBox;
 
 - (void)awakeFromNib {
     // Initialization code

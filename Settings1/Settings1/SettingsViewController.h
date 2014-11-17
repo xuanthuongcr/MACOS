@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CheckBox.h"
 //#import "TableViewCell.h"
 
 @interface SettingsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
